@@ -54,6 +54,9 @@ extractResponse <- function(pp, feature){
   if (feature == "IMAGE_PROPERTIES") {
     return(pp$content$responses$imagePropertiesAnnotation[[1]]$colors)
   }
+  if (feature == "SAFE_SEARCH_DETECTION") {
+    return(pp$content$responses$safeSearchAnnotation)
+  }
 }
 
 
